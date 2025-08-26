@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color: #596D48;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color);
+}
+
+.banner{
+    display: flex;
+    position: relative;
+}
+
+.banner > img + div{
+    position: absolute;
+    background-color: black;
+    top: 2in;
+    width: 400px;
+    height: 180px;
+    opacity: 0.5;
+}
+
+.banner-content{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 2.15in;
+    left: 0.5in;
+    gap: 20px;
+}
+
+.banner-content > img{
+    height: 150px;
+    width: 130px;
+}
+
+.banner-content > span{
+    color: white;
+    font-size: 5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: flex;
+}
+
+.bgImage{
+    width: 400px;
+    height: 100vh;
+}
+
+.left-content{
+    width: 700px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
