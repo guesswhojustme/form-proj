@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('transfonter.org-20250815-082828/Quicksand-Regular.woff2') format('woff2'),
+        url('transfonter.org-20250815-082828/Quicksand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('transfonter.org-20250815-082828/Rubik-Black.woff2') format('woff2'),
+        url('transfonter.org-20250815-082828/Rubik-Black.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,9 +27,12 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: var(--color);
     font-size: 1.5em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url(bodyBG21.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Quicksand", "Rubik";
 }
 
 .banner{
@@ -24,7 +44,7 @@ body{
     position: absolute;
     background-color: black;
     top: 2in;
-    width: 400px;
+    width: 500px;
     height: 180px;
     opacity: 0.5;
 }
@@ -34,7 +54,7 @@ body{
     align-items: center;
     position: absolute;
     top: 2.15in;
-    left: 0.5in;
+    left: 1in;
     gap: 20px;
 }
 
@@ -46,15 +66,19 @@ body{
 .banner-content > span{
     color: white;
     font-size: 5rem;
+    font-family: "Rubik";
 }
 
 .bgImage{
-    width: 400px;
+    width: 500px;
     height: 100vh;
 }
 
 .container{
     display: flex;
+    box-shadow:
+    -8px 0 15px -5px var(--color),  /* left */
+     8px 0 15px -5px var(--color);
 }
 
 .left-content{
@@ -63,6 +87,7 @@ body{
     width: 700px;
     height: 100vh;
     background-color: rgb(255, 255, 255);
+    
 }
 
 .form-container{
@@ -115,12 +140,13 @@ input{
 
 input:focus{
     outline: none;
-    border: 2px solid blue;
+    border: 2px solid rgb(187, 112, 0);
     box-shadow: 0 4px 8px rgba(207, 207, 207, 0.7);
 }
 
 legend{
     padding-top: 20px;
+    font-weight: bold;
 }
 
 button{
@@ -131,6 +157,8 @@ button{
     background-color: var(--color);
     color: white;
     box-shadow: 10px 5px 10px rgb(207, 207, 207);
+    font-family: "Quicksand";
+    font-weight: bold;
 }
 
 button:hover{
@@ -149,10 +177,11 @@ a{
 }
 
 p{
-    font-family: serif;
+    font-family: "Quicksand";
+    font-weight: bold;
 }
 
 .button{
     position: absolute;
-    bottom: 135px;
+    padding-top: 60px;
 }
